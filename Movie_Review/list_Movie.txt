@@ -1,0 +1,8 @@
+1. Generate scaffold Movie
+2. Devise ( + User model )
+3. Assign Movie to User
+	* change Movie.new to current_user with build
+	* before_action to authenticate current_users
+	* add associations
+4. Upload an image for each movie:
+	* Paperclip
