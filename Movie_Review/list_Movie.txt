@@ -19,3 +19,13 @@
 		- add to controller: review.user_id = current_user.id
 	* Connect reviews to movies:
 		- delete index/show for Reviews
+		- add migration (movie_id to reviews)
+		- add associations between reviews nad movies
+		- update form_for review by changing it to ([@movie,@review])
+		- nested_routes for movies/reviews (except index and show)
+		- add set_movie to reviews_controller and before action
+		- add @review.movie_id = @movie.id
+		- add link_to add new review
+		- upgrade show.html.erb for movies
+		- add to movies_controller #show ->
+		@reviews = Review.where(movie_id: @movie.id).oreder('created_at DESC')
