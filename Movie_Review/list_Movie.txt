@@ -11,3 +11,11 @@
 	* add _header.html.erb and fill it with some styling
 	* add styling to index.html.erb
 	* add structure to show.html.erb
+6. Add reviews for each movie:
+	* scaffold rating:int comment:text
+	* Review belongs to User:
+		- add migration User_id to Reviews
+		- add associations between Reviews and Users
+		- add to controller: review.user_id = current_user.id
+	* Connect reviews to movies:
+		- delete index/show for Reviews
