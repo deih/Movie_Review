@@ -6,3 +6,8 @@
 	* add associations
 4. Upload an image for each movie:
 	* Paperclip
+5. Styling and structure:
+	* bootstrap-sass
+	* add _header.html.erb and fill it with some styling
+	* add styling to index.html.erb
+	* add structure to show.html.erb
